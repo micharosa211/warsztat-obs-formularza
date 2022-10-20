@@ -1,14 +1,9 @@
-console.log('warsztat');
+let form = document.getElementById('form');
 
-let form = document.getElementById("form");
-
-let submitForm = (event) => {
-    event.preventDefault();
- console.log('Submit FORM')
-};
-
+const submitForm = (t) => {
+    t.preventDefault();
+    let firstName = document.querySelector('[name=fname]').value;
+    let lastName = document.querySelector('[name=lname]').value;
+    console.log(`Imie: ${firstName}, Nazwisko: ${lastName}`);
+}
 form.addEventListener('submit', submitForm);
-
-console.log(form);
-
-let Fname = document.querySelector(name=)
